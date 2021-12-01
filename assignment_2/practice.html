@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border-spacing: 10px;
+        border-style: double solid;
+      }
+      tr :nth-child(odd) {
+        background-color: cadetblue;
+      }
+      tr :nth-child(odd) :hover {
+        background-color: crimson;
+      }
+      tr :nth-child(even) {
+        background-color: crimson;
+      }
+      tr :nth-child(even) :hover {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="border: black; width: 100px; margin: 20px" border="black">
+      <thead>
+        <tr>
+          <th>ONLINE</th>
+          <th colspan="">twelve</th>
+          <th>twenty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>one</td>
+          <td colspan="2">two</td>
+          <td>three</td>
+        </tr>
+        <tr>
+          <td rowspan="2">four</td>
+          <td>five</td>
+          <td>six</td>
+        </tr>
+        <tr>
+          <td>seven</td>
+          <td>eight</td>
+          <td>nine</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+    <hr />
+  </body>
+</html>
