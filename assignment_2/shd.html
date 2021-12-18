@@ -5,25 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        div{
+            background-color: chartreuse;
+            padding: 10px;
+            margin: 10px;
+        }
+    div.one:hover{
+        background-color: red;
+
+    }
+div.two:hover{
+    background-color: salmon;
+    padding: 20px;
+    background-image: url(pictures/balo.jpg);
+}
+div.three:hover{
+    border: sienna dotted 15px;
+}
+div.four:hover img{
+    display: block;
+}
+img{
+    display: none;
+}
+div::first-letter{
+    color: sienna;
+    font-size: 50px;
+}
+    </style>
   </head>
   <body>
+      <div class="one">
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, fuga. Est
       animi maxime necessitatibus dicta harum delectus. Facere sequi ad
       doloribus, cupiditate adipisci eaque, cumque tempore vel fugit minima
       consequuntur?
-    </p>
-    <p>
+    </p></div>
+    <p> <div class="two">
+       
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at
       dignissimos deserunt. Distinctio sint libero nulla quas cum officia!
       Ullam, quis temporibus eos excepturi quasi id iure suscipit? Temporibus,
       placeat.
-    </p>
+    </p></div>
+    <div class="three">
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ullam
       libero nihil voluptas laudantium consectetur, deserunt dolor impedit ab
       repudiandae ipsum sint facilis voluptates mollitia pariatur? Placeat
       exercitationem modi qui?
-    </p>
+    </p></div>
+    <div class="four">Hover over me to see image
+        <img src="pictures/punjab.jpg" alt="punjab">
+      </div>
   </body>
 </html>
