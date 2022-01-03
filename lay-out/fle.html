@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: rgb(224, 28, 224);
+        justify-content: center;
+        border: 2px red solid;
+        width: 100%;
+      }
+      .flex-container > div {
+        padding: 30px;
+      }
+      .aside-left {
+        display: flex;
+        background-color: rgb(182, 88, 88);
+        padding: 20px;
+        float: right;
+        width: 50%;
+        height: 578px;
+        border: 2px solid red;
+        justify-content: center;
+        align-items: center;}
+
+        .asideright-1 {
+          display: flex;
+          padding: 20px;
+          background-color: rosybrown;
+          width: 35%;
+          height: 250px;
+          justify-content: center;
+          flex-direction: column;
+          overflow: scroll;
+          border: 1px solid red;
+          align-items: center;
+        }
+        .asideright-1 > div {
+          padding: 20px;
+          justify-content: center;
+        }
+        @media (max-width: 700px) {
+          .aside-left .asideright-1 .flex-container {
+            flex-direction: column;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container"><div>HEADER</div></div>
+    <br />
+    <div class="flex-container"><div>NAV</div></div>
+    <br />
+    <div class="aside-left"><div>HEADER</div></div>
+    <br />
+    <div class="asideright-1">
+      <div>SECTION</div>
+
+      <div>ARTICLE</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minus
+        amet vitae quia aut, est inventore illum qui rerum rem nobis voluptatem
+        quam labore odit tempora cumque corrupti perspiciatis. Corrupti!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos corrupti
+        et, sunt adipisci libero eveniet quibusdam ea mollitia atque ipsam.
+        Assumenda iure tempora unde, aliquam necessitatibus reiciendis saepe
+        repudiandae nobis!
+      </div>
+    </div>
+    <br />
+    <div class="asideright-1">
+      <div>SECTION</div>
+
+      <div>ARTICLE</div>
+      <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio pariatur
+        excepturi sit iste labore magni ratione eveniet totam? Reiciendis
+        delectus rem ex impedit amet saepe optio quae commodi illum non!Lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        temporibus iste quod amet possimus quia ex repellendus neque consequatur
+        alias, facere quibusdam sequi iusto numquam ad eum atque! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Facilis ab qui libero
+        ducimus eum, eveniet quae, modi, reiciendis ex est placeat. Atque enim
+        animi voluptatum esse magnam repellendus dolorum numquam. Nihil, ex!
+      </div>
+    </div>
+
+    <br />
+    <div class="flex-container"><div>FOOTER</div></div>
+  </body>
+</html>
